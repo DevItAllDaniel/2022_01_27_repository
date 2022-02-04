@@ -1,65 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Developer Diane's blog</title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>Page Layout</title>
+    <style>
+        .head1 {
+            font-size:40px;
+            color:#009900;
+            font-weight:bold;
+        }
+        .head2 {
+            font-size:17px;
+            margin-left:10px;
+            margin-bottom:15px;
+        }
+        body {
+            margin: 0 auto;
+            background-position:center;
+            background-size: contain;
+        }
+     
+        .menu {  
+            position: sticky;
+            top: 0;
+            background-color: #009900;
+            padding:10px 0px 10px 0px;
+            color:white;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .menu-log {
+            right: auto;
+            float: right;
+        }
+        footer {
+            width: 100%;
+            bottom: 0px;
+            background-color: #000;
+            color: #fff;
+            position: absolute;
+            padding-top:20px;
+            padding-bottom:50px;
+            text-align:center;
+            font-size:30px;
+            font-weight:bold;
+        }
+        .body_sec {
+            margin-left:20px;
+        }
+    </style>
 </head>
+ 
 <body>
-  <header>
-    <div id="logo">DevItAllDaniel+($) Blog</div>
-    <div>Welcome to Below the Stage in the Trap Room. A safe place for sensible conversations, reasonable people, and unpopular ideas</div>  
-    
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YIAIiw8UAfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <div>This is another width and height</div>
-    
-        <iframe width="1120" height="630" src="https://www.youtube.com/embed/YIAIiw8UAfA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-    
-  </header>
-  <article>
-    <section>
-      <h1>The page is to organize, categlog, and record. It may also serve to be a vehicle or platform for learning</h1>
-      <p>I’ve been working with CSS for a while now, and I have to say, it’s pretty awesome. I love being able to separate content from presentation, and to keep all my styles in an external stylesheet.</p>
-      <p>I’ve had a pretty good grasp on the basics for a while now, but I needed to learn more about how to control layout with my CSS. Understanding CSS layout meant first exploring the parts of the CSS box model.</p>
-    </section>
-    <section>
-      <h2>The CSS Box Model</h2>
-      <p>There are lots of great resources online to help you learn the CSS Box Model. I like the CSS Tricks article <a href="https://css-tricks.com/the-css-box-model/" target="_blank">The CSS Box Model</a> by Chris Coyier. To quote the author:</p>
-      <blockquote>At the risk of over-repeating myself: <strong>every element in web design is a rectangular box.</strong></blockquote>
-      <p>That’s right! Every HTML element is considered by the browser to be a rectangular box.</p>
-      <img src="https://i0.wp.com/css-tricks.com/wp-content/csstricks-uploads/thebox.png?resize=570%2C248" alt="illustration of the CSS box model">
-      <p>The CSS Box Model consists of four properties: content, padding, border, and margin. I've included a graphic from Coyier’s article to illustrate this principle.</p>
-      <p>It’s pretty easy to understand the Content portion of the box model. The content is whatever your HTML consists of. It could be a paragraph full of text, or a bulleted list, or an image.</p>
-      <p>Beginning developers may have some trouble keeping the other parts of the box model straight, so let’s examine them one by one.</p>
-    </section>
-    <section>
-      <h2>Padding</h2>
-      <p>Padding immediately surrounds the content area. Padding is often used to give the content area some breathing room by separating the content from the surrounding border area.</p>
-    </section>
-    <section>
-      <h2>Border</h2>
-      <p>The border area of the box is the outermost part of the box. You can think of it as giving the rectangular box an outline. Borders tend to be hidden on most CSS elements by default, but once visible different styles like color and thickness can be applied to them.</p>
-    </section>
-    <section>
-      <h2>Margin</h2>
-      <p>Finally, the margin area exists outside of the box. Margin is the space around an element that separates it from other elements. </p>
-      <p>It’s important to remember that padding and border affect the size of a CSS box, but margin doesn’t.</p>
-    </section>
-  </article>
-  <aside>
-    <h3>About me</h3>
-    <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
-    <p>Developer Diane is a graduate of Treehouse’s Front End Web Development Techdegree. She’s currently a junior developer at Super Web Design Shop.</p>
-    <h3>Other articles I’ve written</h3>
-    <nav>
-      <ul>
-        <li><a href="css-my-first-day.html">CSS: My first day</a></li>
-        <li><a href="css-learning-the-basics">CSS: Learning the basics</a></li>
-        <li><a href="css-selectors">CSS selectors!</a></li>
-      </ul>
-    </nav>
-  </aside>
-  <footer>©2020 Developer Diane.</footer>
+     
+    <!-- Header Section -->
+    <header>
+        <div class="head1">GeeksforGeeks</div>
+        <div class="head2">A computer science portal for geeks</div>
+    </header>
+     
+    <!-- Menu Navigation Bar -->
+    <div class="menu">
+        <a href="#home">HOME</a>
+        <a href="#news">NEWS</a>
+        <a href="#notification">NOTIFICATIONS</a>
+        <div class="menu-log">
+            <a href="#login">LOGIN</a>
+        </div>
+    </div>
+     
+    <!-- Body section -->
+    <div class = "body_sec">
+        <section id="Content">
+            <h3>Content section</h3>
+        </section>
+    </div>
+     
+    <!-- Footer Section -->
+    <footer>Footer Section</footer>
 </body>
 </html>
