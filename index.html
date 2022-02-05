@@ -1,94 +1,62 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>Page Layout</title>
-    <style>
-        .head1 {
-            font-size:40px;
-            color:#009900;
-            font-weight:bold;
-            <!-- background-color:#0000ff; -->
-        }
-        .head2 {
-            font-size:17px;
-            margin-left:10px;
-            margin-bottom:15px;
-        }
-        body {
-            margin: 0 auto;
-            background-position:center;
-            background-size: contain;
-        }
-     
-        .menu {  
-            position: sticky;
-            top: 0;
-            background-color: #009900;
-            padding:10px 0px 10px 0px;
-            color:white;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .menu a {
-            float: left;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            font-size: 20px;
-        }
-        .menu-log {
-            right: auto;
-            float: right;
-        }
-        footer {
-            width: 100%;
-            bottom: 0px;
-            background-color: #000;
-            color: #fff;
-            position: absolute;
-            padding-top:20px;
-            padding-bottom:50px;
-            text-align:center;
-            font-size:30px;
-            font-weight:bold;
-        }
-        .body_sec {
-            margin-left:20px;
-        }
-    </style>
-</head>
- 
-<body>
-     
-    <!-- Header Section -->
+  <meta charset="utf-8">
+  <title>$DoItALLDaniel's Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+  <body>
+
+    <div class="main-nav">
+        <ul class="nav">
+          <li class="name">Jane Smith</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="resume.html">Experience</a></li>
+          <li><a href="#">Photos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
     <header>
-        <div class="head1">GeeksforGeeks</div>
-        <div class="head2">A computer science portal for geeks</div>
+      <img src="https://placeimg.com/400/400/people" alt="Drawing of Jane Smith" class="profile-image">
+      <h1 class="tag name">Hello, I'm $DoItAllDaniel.</h1>
+      <p class="tag location">My home is Winter Park, Florida.</p>
     </header>
-     
-    <!-- Menu Navigation Bar -->
-    <div class="menu">
-        <a href="#home">HOME</a>
-        <a href="#news">NEWS</a>
-        <a href="#notification">NOTIFICATIONS</a>
-        <div class="menu-log">
-            <a href="#login">LOGIN</a>
-        </div>
-    </div>
-     
-    <!-- Body section -->
-    <div class = "body_sec">
-        <section id="Content">
-            <h3>Content section</h3>
-            <h3>Below the Theater in the Trap Room<h3>
-            <div>This is a safe place for civil discourse amonst reasonable people. This is a place to explore ideas and challenge the status. This a place to draw from every discipline in the effort to create confident understand of the past so that we can have a clear understanding of the present and thus a plan, a path, and hope for the future. From a concert of ideas embolded with the courage to question the assumptions established, critique the prevalent beliefs, and distill the truth we will have a amalgu,m. blah blah blah.</div>
-            <div>this is an attempt to create and navigate to a second page.</div>
+
+    <main class="flex">
+      <div class="card">
+        <h2 class="card-title">Background</h2>
+        <ul>
+            <li> I’m an aspiring web designer who loves everything about the web. I've lived in lots of different places and have worked in lots of different jobs. I’m excited to bring my life experience to the process of building fantastic looking websites.</li>
+            <li>I’ve been a professional cook and gardener and am a life-long learner who's always interested in expanding my skills.</li>
             <li>To learn more, <a href="resume.html" target="_blank">view my resume</a></li>
-        </section>
-    </div>
-     
-    <!-- Footer Section -->
-    <footer>Footer Section</footer>
-</body>
-</html>   
+          </ul>
+        <h3>A New Subsection</h3>
+        </div>
+          <li>To learn more, <a href="resume.html">view my resume.</a></li>
+
+      <div class="card">
+        <h2 class="card-title">Goals</h2>
+        <p class="card-title">I want to master the process of building web sites and increase my knowledge, skills and abilities in:</p>
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Ruby</li>
+          <li>Rails</li>
+        </ul>
+        <p>I’d like to work for a web design firm helping clients create an impressive online presence.</p>
+      </div> 
+
+    </main>
+    <footer>
+      <ul>
+        <li><a href="https:twitter.com/treehouse" target="_blank"class="social twitter">Twitter</a></li>
+        <li><a href="#" class="social linkedin">LinkedIn</a></li>
+        <li><a href="#" class="social github">Github</a></li>
+      </ul>
+      <p class="copyright">Copyright 2015, Jane Smith</p>
+    </footer>
+  </body>
+  </html>
